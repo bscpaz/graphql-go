@@ -14,5 +14,6 @@
 ```console
 bscpaz@2am:$ go mod init github.com/bscpaz/graphql-go
 bscpaz@2am:$ go get github.com/99designs/gqlgen
+bscpaz@2am:$ go run github.com/99designs/gqlgen init
 ```
 
