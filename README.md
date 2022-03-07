@@ -20,3 +20,12 @@ bscpaz@2am:$ go get github.com/99designs/gqlgen
 bscpaz@2am:$ go run github.com/99designs/gqlgen init
 ```
 
+<hr>
+<h4 align="center">Known issues</h4>
+
+```console
+issue:
+  missing go.sum entry for module providing package
+solution:
+
+```
