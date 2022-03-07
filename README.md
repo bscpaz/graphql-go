@@ -24,6 +24,7 @@ bscpaz@2am:$ go run github.com/99designs/gqlgen init
 <h4 align="center">Known issues</h4>
 
 ```console
+After running "go run github.com/99designs/gqlgen init"...
 issue:
   missing go.sum entry for module providing package
 solution:
