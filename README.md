@@ -27,7 +27,7 @@ It serves as dependency injection for your app. A kind of a datasource or a repo
 In this POC, we just use arrays.
 
 #### File 'schema.resolvers.go'
-This is a kind of service implementation which you code queries, inserts, updates functions of your schemas files.
+This is a kind of service (or controller) implementation which you code queries, inserts, updates functions of your schemas files.
 
 <hr>
 <h4 align="center">Known issues</h4>
