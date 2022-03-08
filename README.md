@@ -28,5 +28,6 @@ After running "go run github.com/99designs/gqlgen init"...
 issue:
   missing go.sum entry for module providing package
 solution:
-
+  bscpaz@2am:$ go mod tidy
+  bscpaz@2am:$ go get github.com/99designs/gqlgen
 ```
