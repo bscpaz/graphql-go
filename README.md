@@ -31,3 +31,12 @@ solution:
   bscpaz@2am:$ go mod tidy
   bscpaz@2am:$ go get github.com/99designs/gqlgen
 ```
+
+```console
+After running "go run github.com/99designs/gqlgen init"...
+issue:
+  graph/schema.graphqls already exists
+  exit status 1
+solution:
+
+```
