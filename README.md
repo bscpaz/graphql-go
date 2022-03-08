@@ -28,8 +28,8 @@ After running "go run github.com/99designs/gqlgen init"...
 issue:
   missing go.sum entry for module providing package
 solution:
-  bscpaz@2am:$ go mod tidy
-  bscpaz@2am:$ go get github.com/99designs/gqlgen
+  go mod tidy
+  go get github.com/99designs/gqlgen
 ```
 
 ```console
@@ -38,5 +38,7 @@ issue:
   graph/schema.graphqls already exists
   exit status 1
 solution:
-
+  go mod tidy
+  go get github.com/99designs/gqlgen@v0.13.0
+  go run github.com/99designs/gqlgen init
 ```
