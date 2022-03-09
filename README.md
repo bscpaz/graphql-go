@@ -44,6 +44,18 @@ query findCategories {
 }
 ```
 
+```console
+mutation createCategory {
+  createCategory(input: {
+    name:"Programming language",
+    description: "Programming languages are one kind of computer language"
+  }) {
+    id
+    name
+    description
+  }
+}
+```
 <hr>
 <h4 align="center">Known issues</h4>
 
