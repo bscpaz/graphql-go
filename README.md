@@ -29,7 +29,14 @@ In this POC, we just use arrays.
 #### File 'schema.resolvers.go'
 This is a kind of service (or controller) implementation which you code queries, inserts, updates functions of your schemas files.
 
-### Exemple of inputs
+### Runing the graphQL
+
+#### Start the gqlgen server
+```console
+bscpaz@2am:$ go run server.go
+```
+
+#### Exemple of inputs
 
 ```console
 query findCategories {
