@@ -29,6 +29,21 @@ In this POC, we just use arrays.
 #### File 'schema.resolvers.go'
 This is a kind of service (or controller) implementation which you code queries, inserts, updates functions of your schemas files.
 
+### Exemple of inputs
+
+```console
+query findCategories {
+  categories {
+    id
+    name
+    description
+    courses {
+      name
+    }
+  }  
+}
+```
+
 <hr>
 <h4 align="center">Known issues</h4>
 
