@@ -93,6 +93,46 @@ mutation createCourse {
   }
 }
 ```
+
+```console
+query findChapters {
+  chapters {
+    id
+    name
+    course {
+      name
+    }
+  }
+}
+```
+
+```console
+mutation createChapter1 {
+  createChapter(input: {
+    name: "Primitive types",
+    courseId: 5532800
+  }) {
+    id
+    name
+    course {
+      name
+    }
+  }
+}
+
+mutation createChapter2 {
+  createChapter(input: {
+    name: "Arrays and Lists",
+    courseId: 5532800
+  }) {
+    id
+    name
+    course {
+      name
+    }
+  }
+}
+```
 <hr>
 <h4 align="center">Known issues</h4>
 
