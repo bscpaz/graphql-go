@@ -63,6 +63,28 @@ mutation createCategory {
   }
 }
 ```
+
+```console
+query findCourses {
+  courses {
+    id
+    name
+  }
+}
+```
+```console
+mutation createCourse {
+  createCourse(input: {
+    name: "Java"
+    description: "Bruno's Java course"
+    categoryId: 5532800
+  }) {
+    id
+    name
+    description
+  }
+}
+```
 <hr>
 <h4 align="center">Known issues</h4>
 
