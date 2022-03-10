@@ -71,6 +71,12 @@ query findCourses {
   courses {
     id
     name
+    category {
+      name
+    }
+    chapters {
+      name
+    }
   }
 }
 ```
