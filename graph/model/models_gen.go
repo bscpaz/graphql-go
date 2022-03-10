@@ -20,7 +20,7 @@ type Course struct {
 	Name        string     `json:"name"`
 	Description *string    `json:"description"`
 	Category    *Category  `json:"category"`
-	Chapter     []*Chapter `json:"chapter"`
+	Chapters    []*Chapter `json:"chapters"`
 }
 
 type NewCategory struct {

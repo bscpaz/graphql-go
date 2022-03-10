@@ -10,7 +10,7 @@ type Course {
     name: String!
     description: String
     category: Category!
-    chapter: [Chapter!]
+    chapters: [Chapter!]
 }
 
 type Chapter {

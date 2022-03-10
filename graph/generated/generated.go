@@ -57,7 +57,7 @@ type ComplexityRoot struct {
 
 	Course struct {
 		Category    func(childComplexity int) int
-		Chapter     func(childComplexity int) int
+		Chapters    func(childComplexity int) int
 		Description func(childComplexity int) int
 		ID          func(childComplexity int) int
 		Name        func(childComplexity int) int
@@ -158,12 +158,12 @@ func (e *executableSchema) Complexity(typeName, field string, childComplexity in
 
 		return e.complexity.Course.Category(childComplexity), true
 
-	case "Course.chapter":
-		if e.complexity.Course.Chapter == nil {
+	case "Course.chapters":
+		if e.complexity.Course.Chapters == nil {
 			break
 		}
 
-		return e.complexity.Course.Chapter(childComplexity), true
+		return e.complexity.Course.Chapters(childComplexity), true
 
 	case "Course.description":
 		if e.complexity.Course.Description == nil {
@@ -319,7 +319,7 @@ type Course {
     name: String!
     description: String
     category: Category!
-    chapter: [Chapter!]
+    chapters: [Chapter!]
 }
 
 type Chapter {
@@ -839,7 +839,7 @@ func (ec *executionContext) _Course_category(ctx context.Context, field graphql.
 	return ec.marshalNCategory2ᚖgithubᚗcomᚋbscpazᚋgraphqlᚑgoᚋgraphᚋmodelᚐCategory(ctx, field.Selections, res)
 }
 
-func (ec *executionContext) _Course_chapter(ctx context.Context, field graphql.CollectedField, obj *model.Course) (ret graphql.Marshaler) {
+func (ec *executionContext) _Course_chapters(ctx context.Context, field graphql.CollectedField, obj *model.Course) (ret graphql.Marshaler) {
 	defer func() {
 		if r := recover(); r != nil {
 			ec.Error(ctx, ec.Recover(ctx, r))
@@ -857,7 +857,7 @@ func (ec *executionContext) _Course_chapter(ctx context.Context, field graphql.C
 	ctx = graphql.WithFieldContext(ctx, fc)
 	resTmp, err := ec.ResolverMiddleware(ctx, func(rctx context.Context) (interface{}, error) {
 		ctx = rctx // use context from middleware stack in children
-		return obj.Chapter, nil
+		return obj.Chapters, nil
 	})
 	if err != nil {
 		ec.Error(ctx, err)
@@ -2455,8 +2455,8 @@ func (ec *executionContext) _Course(ctx context.Context, sel ast.SelectionSet, o
 			if out.Values[i] == graphql.Null {
 				invalids++
 			}
-		case "chapter":
-			out.Values[i] = ec._Course_chapter(ctx, field, obj)
+		case "chapters":
+			out.Values[i] = ec._Course_chapters(ctx, field, obj)
 		default:
 			panic("unknown field " + strconv.Quote(field.Name))
 		}
