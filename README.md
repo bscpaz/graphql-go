@@ -12,12 +12,14 @@
 ### How to get stated
 #### Initialize Go module and dependecies
 ```console
-bscpaz@2am:$ go mod init github.com/bscpaz/graphql-go
-bscpaz@2am:$ go get github.com/99designs/gqlgen
+go mod init github.com/bscpaz/graphql-go
+```
+```console
+go get github.com/99designs/gqlgen
 ```
 #### Generete your own models (*.graphql files) into 'graph' folder and then...
 ```console
-bscpaz@2am:$ go run github.com/99designs/gqlgen init
+go run github.com/99designs/gqlgen init
 ```
 
 ### Concepts of graphQL
@@ -33,7 +35,7 @@ This is a kind of service (or controller) implementation which you code queries,
 
 #### Start the gqlgen server
 ```console
-bscpaz@2am:$ go run server.go
+go run server.go
 ```
 
 #### Exemple of inputs
