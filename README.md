@@ -107,3 +107,11 @@ solution:
   go get github.com/99designs/gqlgen@v0.13.0
   go run github.com/99designs/gqlgen init
 ```
+
+```console
+After running "go run github.com/99designs/gqlgen init"...
+issue:
+  validation failed: packages.Load: /usr/local/go/src/net/cgo_linux.go:13:8: could not import C (no metadata for C)
+solution:
+  sudo apt-get install gcc
+```
