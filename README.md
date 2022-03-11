@@ -36,6 +36,7 @@ After splitting models in their own files and adding those models in gqlgen.yml 
 ```console
 gqlgen generate
 ```
+This will add more methods in schema.resolvers.go file in which you provide the father and the code is supposed to return his children.
 
 ### Running the graphQL
 
