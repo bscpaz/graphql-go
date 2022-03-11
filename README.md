@@ -31,6 +31,9 @@ In this POC, we just use arrays.
 #### File 'schema.resolvers.go'
 This is a kind of service (or controller) implementation which you code queries, inserts, updates functions of your schemas files.
 
+#### The problem of N+1 in graphQL
+GraphQL is able to produce N+1 problem. Pay attention on this and take a look at 'Dataloaders' on gplgen's documentation.
+
 ### Generating relationships
 After splitting models in their own files and adding those models in gqlgen.yml (tag 'models'):
 ```console
