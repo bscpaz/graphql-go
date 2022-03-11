@@ -31,7 +31,13 @@ In this POC, we just use arrays.
 #### File 'schema.resolvers.go'
 This is a kind of service (or controller) implementation which you code queries, inserts, updates functions of your schemas files.
 
-### Runing the graphQL
+### Generating relationships
+After splitting models in their own files and adding those models in gqlgen.yml (tag 'models'):
+```console
+gqlgen generate
+```
+
+### Running the graphQL
 
 #### Start the gqlgen server
 ```console
